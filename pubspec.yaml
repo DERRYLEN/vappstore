@@ -1,0 +1,77 @@
+name: vapsstoreapp
+description: "Aplikasi toko Vapstore menggunakan Flutter."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+# Dependencies specify other packages that your package needs in order to work.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Icons standar iOS
+  cupertino_icons: ^1.0.8
+
+  # --- TAMBAHAN UNTUK FITUR VAPSTORE ---
+
+  # 1. State Management (Untuk mengelola data keranjang & produk)
+  provider: ^6.1.2
+
+  # 2. Carousel Slider (Untuk banner promo bergerak di halaman utama)
+  carousel_slider: ^5.0.0
+
+  # 3. Cached Network Image (Agar gambar produk tidak loading berulang-ulang & hemat kuota user)
+  cached_network_image: ^3.4.1
+
+  # 4. URL Launcher (Untuk membuka link WhatsApp, Tokopedia, atau Maps toko)
+  url_launcher: ^6.3.1
+
+  # 5. Shared Preferences (Untuk menyimpan data sederhana di HP, misal: status verifikasi umur 18+)
+  shared_preferences: ^2.3.2
+
+  # 6. Intl (Untuk memformat harga menjadi Rupiah, misal: Rp 150.000)
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices.
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # Bagian ini hamba aktifkan (uncomment) karena Rajaku pasti butuh tempat
+  # untuk menaruh logo toko atau gambar placeholder.
+  # Pastikan Rajaku membuat folder bernama 'assets' dan di dalamnya folder 'images'
+  # di root folder proyek (sejajar dengan folder lib).
+  assets:
+    - assets/images/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font.
